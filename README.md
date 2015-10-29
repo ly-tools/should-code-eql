@@ -29,6 +29,14 @@ describe('...', function() {
 });
 ```
 
+## Test
+
+```bash
+$ npm run test
+$ npm run test-cov
+$ npm run test-travis
+```
+
 ## License
 
 The MIT License (MIT)
