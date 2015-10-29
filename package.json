@@ -1,0 +1,30 @@
+{
+  "name": "should-code-eql",
+  "version": "1.0.0",
+  "description": "javasript code equality assertions",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/_mocha --require should --reporter spec",
+    "test-cov": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require should",
+    "test-travis": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --require should"
+  },
+  "keywords": [
+    "should",
+    "code",
+    "equality"
+  ],
+  "author": "skyinlayer",
+  "license": "MIT",
+  "dependencies": {
+    "escodegen": "^1.7.0",
+    "esprima": "^2.7.0",
+    "should": "~7.1.1",
+    "should-equal": "~0.5.0",
+    "should-format": "~0.3.1",
+    "should-type": "~0.2.0"
+  },
+  "devDependencies": {
+    "istanbul": "~0.4.0",
+    "mocha": "~2.3.3"
+  }
+}
